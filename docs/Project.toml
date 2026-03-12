@@ -1,0 +1,10 @@
+[deps]
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+PenguinPlots = "799ed3e2-4ce5-4db6-9e24-9d9b277c3c42"
+
+[sources]
+PenguinPlots = {path = ".."}
+
+[compat]
+Documenter = "1"

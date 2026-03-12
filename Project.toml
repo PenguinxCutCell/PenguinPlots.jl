@@ -1,0 +1,49 @@
+name = "PenguinPlots"
+uuid = "799ed3e2-4ce5-4db6-9e24-9d9b277c3c42"
+version = "0.1.0"
+
+[deps]
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+GeometryBasics = "5c1252a2-5f33-56bf-86c9-59e7332b4326"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Makie = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+
+[weakdeps]
+PenguinDiffusion = "c72b9f8e-3a44-4f12-a9d3-6e5b2c1f7a8b"
+PenguinSolverCore = "8f14e45f-7d0b-4a6b-9c1e-2f3d4b5a6c7d"
+PenguinStefan = "9e1c32ef-482d-489b-9e61-ca11a025a09c"
+PenguinStokes = "7b7cbf4f-2a5e-4d87-9f58-4d06d0e8f8a5"
+
+[extensions]
+PenguinPlotsDiffusionExt = "PenguinDiffusion"
+PenguinPlotsStokesExt = "PenguinStokes"
+PenguinPlotsStefanExt = "PenguinStefan"
+PenguinPlotsSolverCoreExt = "PenguinSolverCore"
+
+[sources]
+PenguinDiffusion = {path = "../PenguinDiffusion.jl"}
+PenguinSolverCore = {path = "../PenguinSolverCore.jl"}
+PenguinStefan = {path = "../PenguinStefan.jl"}
+PenguinStokes = {path = "../PenguinStokes.jl"}
+
+[compat]
+CairoMakie = "0.13"
+GeometryBasics = "0.4, 0.5"
+Makie = "0.22"
+PenguinDiffusion = "0.1"
+PenguinSolverCore = "0.1"
+PenguinStefan = "0.1"
+PenguinStokes = "0.1"
+julia = "1"
+
+[extras]
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+PenguinDiffusion = "c72b9f8e-3a44-4f12-a9d3-6e5b2c1f7a8b"
+PenguinSolverCore = "8f14e45f-7d0b-4a6b-9c1e-2f3d4b5a6c7d"
+PenguinStefan = "9e1c32ef-482d-489b-9e61-ca11a025a09c"
+PenguinStokes = "7b7cbf4f-2a5e-4d87-9f58-4d06d0e8f8a5"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "CairoMakie", "PenguinDiffusion", "PenguinStokes", "PenguinStefan", "PenguinSolverCore"]
